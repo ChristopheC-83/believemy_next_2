@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flexMid {
+  @apply flex items-center justify-center;
+}
+
+.header-link {
+  @apply transition duration-500 text-amber-100 hover:text-amber-300 hover:underline;
+}
+
+.input-custom {
+  @apply w-full p-2 border-2 rounded-md outline-none border-slate-500 bg-slate-500 focus:border-2 focus:outline-none focus:border-amber-300;
+}
+.btn-custom {
+  @apply w-full p-3 text-lg transition duration-150 border-2 rounded-md border-slate-500 bg-slate-500 focus:border-2 hover:border-amber-300 hover:bg-slate-600 hover:text-amber-200;
+}
+.disabled-btn {
+  @apply bg-opacity-50 cursor-not-allowed pointer-events-none hover:border-slate-500;
+}
